@@ -11,6 +11,7 @@ body {
     background-color: #2d2d2d;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 h1 {
@@ -32,14 +33,21 @@ p {
 .main_container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 80%;
 }
 
 .centered_container{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.narrow_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .right_align_container{
@@ -68,4 +76,41 @@ p {
 .navbar_brand a{
     color: #e8e8e8;
     text-decoration: none;
+}
+
+.navbar_item{
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    width: fit-content;
+    font-size: 24px;
+}
+.navbar_item a{
+    color: #8d8d8d;
+    text-decoration: none;
+}
+
+
+
+.grid_container{
+    display: flex;
+    width: 1080;
+}
+.grid-itemL{
+    flex: 1;
+    background-color: #222222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+.grid-itemL p{
+    color: #9f9f9f;
+}
+.grid-itemR{
+    flex: 1;
+    background-color: #FDD024;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 25px;
 }
